@@ -1,3 +1,9 @@
+def number_records():
+    with open('data_second_variant.csv', 'r+', encoding='utf-8') as f:
+        lines = f.readlines()
+        num_records = len(lines)
+    return (num_records + 1)
+    
 def name_data():
     name = input('Введите Ваше имя: ')
     print('Очень красивое имя! (а меня зовут гб_бот, меня создала компания GeekBrains!')
